@@ -1,42 +1,35 @@
-.navbar{
-    position: sticky;
-    top: 0;
-    color: white;
-    /* background-color: aqua; */
+.section-navbar{
+    width: 100%;
+    background-color: #cce7fa;
+   
+}
+
+
+.section-navbar .main-container {
     display: flex;
     justify-content: space-between;
-    padding: 2% 4%;
-}
-.oslab{
-    font-size: 25px;
-    font-weight: 500;
-}
+    align-items: center;
+    padding: 1rem 1.8rem;
+  
+  }
+
+  
+
+
 ul{
-    font-size: 18px;
+    font-size: 1rem;
 }
-.links li{
-    list-style: none;
-    display: inline-block;
-    padding: 5px 15px;
-    position: relative;
+
+.links li {
+    font-size: 1.3rem;
+    font-weight: 600;
+ 
 }
-.navbar ul li ::after{
-    /* position: absolute; */
-    top: 0;
-    /* z-index: 100; */
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+
+.links li:hover{
+    
+    /* background-color: rgb(146, 248, 248);*/
+    color: rgb(144, 118, 7);
 }
-.navbar ul li:hover ::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    margin: auto;
-}
+
+/* Media Query  */

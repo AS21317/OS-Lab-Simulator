@@ -5,10 +5,11 @@ import '../styles/Home.css'
 const Home = () => {
   return (
    <>
-      <div className='home_page'>
+      
         <Nav  />
+      
+      
         <Home_intro  />
-      </div>
 
       <Home_content/>
       <Home_blogs/>

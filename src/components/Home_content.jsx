@@ -2,10 +2,14 @@ import '../styles/Home_content.css'
 
 const Home_content = () => {
   return (
-    <div className='Home_content'>
+    <section className='section-content'>
+      <div className="main-container Home_content">
+      <div className='content'>
+        <div className="main-container1">
       <h1>Why we need CPU Scheduling Algorithms</h1>
       <p>Main purposes of CPU Scheduling Algorithms are listed below</p>
-      <div className="cards">
+      </div>
+      <div className="main-container2 grid grid-three--cols">
 
       <div className="card1 cardd" href="">
   <h3> Time Minimizing</h3>
@@ -43,6 +47,9 @@ const Home_content = () => {
        
       </div>
     </div>
+      </div>
+    </section>
+  
   )
 }
 

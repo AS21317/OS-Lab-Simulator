@@ -28,7 +28,12 @@ const Home_fly = () => {
   // }
 
   return (
-    <div className="home-fly-main">
+    <section className="control-section">
+<div className=" main-container home-fly-main">
+<div className="main-container1">
+      <h1>Welcome To Control Section</h1>
+      <p>Read Subject and  Article of your choice directly </p>
+      </div>
       <div className="void" id="void">
         <div className="crop">
           <ul
@@ -158,6 +163,8 @@ const Home_fly = () => {
       </div>
       <Footer />
     </div>
+    </section>
+    
   );
 };
 
