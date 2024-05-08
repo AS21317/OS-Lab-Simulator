@@ -20,7 +20,9 @@
   padding-bottom: 4rem;
 }
 
-
+/* .main-container .grid{
+  display: grid;
+} */
 .about-div img{
   padding: 2.4rem;
   background-color: #ebf3fe;
@@ -91,7 +93,7 @@ article:hover{
 
 .content-card p{
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(2, 77, 2);
 }
 
@@ -153,5 +155,40 @@ article  .button-81 {
     .button-81 {
       font-size: 1.125rem;
       padding: 1rem 2rem;
+    }
+  }
+
+  .heading-content h1{
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+
+  .heading-content p{
+    font-weight: 700;
+    font-size: 2.1rem;
+    color: rgb(4, 104, 14);
+  }
+
+  @media(width <=1210px)
+  {
+    .section-blog{
+      & .grid-three--cols{
+        grid-template-columns: repeat(2,1fr);
+      }
+      & .grid{
+        gap: 2rem;
+      }
+    }
+  }
+
+  @media(width<=770px)
+  {
+    .section-blog{
+      & .grid-three--cols{
+        grid-template-columns:1fr;
+      }
+      & .grid{
+        gap: 2rem;
+      }
     }
   }

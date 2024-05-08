@@ -9,6 +9,7 @@
     height: 299px;
     z-index: 1000;
     margin: 10px;
+    padding: .7rem;
     float: left; /* stack each div horizontally */
 }
 
@@ -21,16 +22,15 @@ img
 {
     font-weight: 700;
     font-size: 1.4rem;
-    position: absolute;
+    
 }
 
 .back p
 {
-    position: absolute;
-    padding: .51rem .6rem;
+   
+    padding: 0 .2rem;
     top: 40px;
-    text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -54,6 +54,10 @@ img
     top: 260px;
     left:80px;
     color: #d1f90a;
+}
+
+.bg-face >h1{
+    text-align: center;
 }
 
 /* style the maincontainer class with all child div's of class .front */
@@ -107,6 +111,7 @@ img
     
     width: 302px;
     height: 290px;
+
     
     backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
     transition: transform .5s linear 0s;
@@ -129,6 +134,7 @@ img
     color: #fff;
     width: 302px;
     height: 290px;
+
     border-radius: 10px;
     padding: 5px;
     backface-visibility: hidden;
@@ -153,8 +159,7 @@ img
 /*   Social media icons and details css    */
 
 .big-box{
-    display: flex;
-    flex-direction: column;
+
     position: relative;
     /* padding-top: 100px; */
     /* margin-top: 100px; */
@@ -165,7 +170,7 @@ img
    background: transparent;
    display: flex;
    gap: 20px;
-   top: -30%;
+   top: -25%;
    left: 70%;
    /* z-index: 10000; */
    justify-content: space-between;
@@ -182,8 +187,8 @@ img
     background: transparent;
     display: flex;
     gap: 20px;
-    top: 8%;
-    left: -70%;
+    top: 14%;
+    left: -64%;
     /*z-index: 10000;
     */justify-content: space-between;
     transform:rotate(90deg) ;
@@ -219,7 +224,7 @@ img
 }
 
 .container .card:hover .face.face1{
-    background: #636262;
+    background: #544204;
     transform: translateY(0px);
 }
 
@@ -322,6 +327,11 @@ img
 .content>h3>a{
     font-weight: 700;
 }
+
+.card-1-all ,.card-2-all{
+    display: flex;
+}
+
 
 
  

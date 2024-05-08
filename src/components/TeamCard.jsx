@@ -10,7 +10,9 @@ const TeamCard = ({ name, image, social, id }) => {
   return (
     <>
       <div className="big-box">
+        
         {id == 1 ? (
+          <div className="card-1-all">
           <div className="maincontainer maincontainer-1">
             <div className="back">
               <h2>About Me & Project</h2>
@@ -30,29 +32,6 @@ const TeamCard = ({ name, image, social, id }) => {
               </div>
             </div>
           </div>
-        ) : (
-          <div className="maincontainer maincontainer-2">
-            <div className="back">
-              <h2>About Me & Project</h2>
-              <p>
-                Hey Everyone ! This is Kavya Gupta, a third-year BE CSE student
-                at Panjab University SSG Regional Center. Purpose of developing
-                this project is to sharp my Full Stack Skills and help our
-                juniors to understand easily the world of Algorithms.
-              </p>
-            </div>
-            <div className="front front-2">
-              <div className="image">
-                <img src={image} alt="Kavya Gupta" />
-                <h2>{name}</h2>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */}
-
-        {id == 1 ? (
           <div className={`container container-1`}>
             <div className="card">
               <div className="face bg-face face1">
@@ -89,7 +68,27 @@ const TeamCard = ({ name, image, social, id }) => {
               </div>
             </div>
           </div>
+          </div>
         ) : (
+          <div className="card-2-all">
+
+          <div className="maincontainer maincontainer-2">
+            <div className="back">
+              <h2>About Me & Project</h2>
+              <p>
+                Hey Everyone ! This is Kavya Gupta, a third-year BE CSE student
+                at Panjab University SSG Regional Center. Purpose of developing
+                this project is to sharp my Full Stack Skills and help our
+                juniors to understand easily the world of Algorithms.
+              </p>
+            </div>
+            <div className="front front-2">
+              <div className="image">
+                <img src={image} alt="Kavya Gupta" />
+                <h2>{name}</h2>
+              </div>
+            </div>
+          </div>
           <div className={`container container-2`}>
             <div className="card">
               <div className="face bg-face face1">
@@ -126,7 +125,12 @@ const TeamCard = ({ name, image, social, id }) => {
               </div>
             </div>
           </div>
+          </div>
         )}
+
+      
+
+        
       </div>
     </>
   );

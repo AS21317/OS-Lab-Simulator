@@ -99,12 +99,7 @@ function Slider() {
 
   return (
     <section className="card-container-home">
-        <div className="title">
-        <h2>
-        Here are the features
-we are proud of
-        </h2>
-      </div>
+      
         <div className="section">
       
       <div className="section-center">

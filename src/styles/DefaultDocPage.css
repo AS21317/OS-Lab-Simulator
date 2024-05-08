@@ -1,0 +1,35 @@
+.doc-container{
+    text-align: center;
+    background-color: white;
+    & p{
+        margin: 0 auto;
+        margin-top: .9rem;
+       text-align: left;
+    
+       font-size: 1.2rem;
+       font-weight: 500;
+       color: rgb(17 92 92);
+       margin-bottom: -1rem;
+       line-height : 30px;
+       font-family: "Poppins", sans-serif;
+    }
+}
+
+.algo-names{
+    & h4{
+        font-weight: 600;
+        font-size: larger;
+        text-align: left;
+        font-family: "Urbanist", sans-serif;
+    }
+}
+
+.algo-advantage h4{
+    font-size: 1.4rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.para-detail{
+    padding-left: 3rem;
+}

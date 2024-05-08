@@ -1,12 +1,11 @@
  import { searchingAlgo } from '../components/doc-page-data'
  import { dynamicAlgo } from '../components/algorithmsContent/dynamicProgrammingContent'
  import { backTrackAlgo } from '../components/algorithmsContent/backtrackingAlgoContent'
-
  import { sortingAlgo } from '../components/algorithmsContent/sortingAlgoData'
-
  import { graphAlgos } from '../components/algorithmsContent/graphAlgoContent'
-
  import { AIalgos } from '../components/algorithmsContent/AI-algos-content'
+
+ 
 
 
 // export default Docs
@@ -30,59 +29,70 @@ const DocsPage = () => {
 
 
   return (
-    <div className='docs_page'>
-      <div className='doc-nav-section' >
-        <Nav />
-        <h1>Documentation</h1>
-        <div className='doc-cluster'>
-            <h2>Choose Your Favourite Docs</h2>
-        <div className='doc-btn-container'>
 
-            <button className={`dac-page-tab ${activeButton === 'button1' ? 'active' : ''} `} onClick={()=>{
-            setDefaultDoc(1);
-            handleButtonClick('button1')}}  >CPU Scheduling</button>
-
-            <button className={`dac-page-tab ${activeButton === 'button2' ? 'active' : ''} `}
-             onClick={()=>{
-                setDocs(AIalgos);
-            setDefaultDoc(2)
-            handleButtonClick('button2')
-            
-            }}  >AI Algorithms</button>
-
-            <button className={`dac-page-tab ${activeButton === 'button3' ? 'active' : ''} `}onClick={()=>{setDocs(backTrackAlgo);
-            setDefaultDoc(2)
-            handleButtonClick('button3')
-            }} >Backtracking Algorithms</button>
-
-            <button className={`dac-page-tab ${activeButton === 'button4' ? 'active' : ''} `} onClick={()=>{setDocs(dynamicAlgo);
-            setDefaultDoc(2)
-            handleButtonClick('button4')
-            }} >DP Algorithms</button>
-
-            <button className={`dac-page-tab ${activeButton === 'button5' ? 'active' : ''} `} onClick={()=>{setDocs(searchingAlgo);
-            setDefaultDoc(2)
-            handleButtonClick('button5')
-            }} >Searching Algorithms</button>
-
-            <button className={`dac-page-tab ${activeButton === 'button6' ? 'active' : ''} `} onClick={()=>{setDocs(sortingAlgo);
-            setDefaultDoc(2)
-            handleButtonClick('button6')
-            }}>Sorting Algorithms</button>
-
-            <button className={`dac-page-tab ${activeButton === 'button7' ? 'active' : ''} `} onClick={()=>{setDocs(graphAlgos);
-            setDefaultDoc(2)
-            handleButtonClick('button7')
-            }} >Graph Algorithms</button>
-
+    <div>
+        <div className='navbar-section-doc'>
+        <Nav/>
         </div>
-        </div>
+       
+  <div className='docs_page'>
+      <div className='docintro' >
+     
+        <h1>Documentation Section </h1>
+        
+            <h2>Choose Your Favourite Docs to read</h2>
+        
       </div>
-      { defaultdoc===1?
+
+      <div className="grid doc-and-sidebar grid-two--cols">
+        <div className="sidebar-doc">
+        
+
+<button className={`dac-page-tab ${activeButton === 'button1' ? 'active' : ''} `} onClick={()=>{
+setDefaultDoc(1);
+handleButtonClick('button1')}}  >CPU Scheduling</button>
+
+<button className={`dac-page-tab ${activeButton === 'button2' ? 'active' : ''} `}
+ onClick={()=>{
+    setDocs(AIalgos);
+setDefaultDoc(2)
+handleButtonClick('button2')
+
+}}  >AI Algorithms</button>
+
+<button className={`dac-page-tab ${activeButton === 'button3' ? 'active' : ''} `}onClick={()=>{setDocs(backTrackAlgo);
+setDefaultDoc(2)
+handleButtonClick('button3')
+}} >Backtracking Algorithms</button>
+
+<button className={`dac-page-tab ${activeButton === 'button4' ? 'active' : ''} `} onClick={()=>{setDocs(dynamicAlgo);
+setDefaultDoc(2)
+handleButtonClick('button4')
+}} >DP Algorithms</button>
+
+<button className={`dac-page-tab ${activeButton === 'button5' ? 'active' : ''} `} onClick={()=>{setDocs(searchingAlgo);
+setDefaultDoc(2)
+handleButtonClick('button5')
+}} >Searching Algorithms</button>
+
+<button className={`dac-page-tab ${activeButton === 'button6' ? 'active' : ''} `} onClick={()=>{setDocs(sortingAlgo);
+setDefaultDoc(2)
+handleButtonClick('button6')
+}}>Sorting Algorithms</button>
+
+<button className={`dac-page-tab ${activeButton === 'button7' ? 'active' : ''} `} onClick={()=>{setDocs(graphAlgos);
+setDefaultDoc(2)
+handleButtonClick('button7')
+}} >Graph Algorithms</button>
+
+
+        </div>
+        <div className="main-container">
+        { defaultdoc===1?
         <DefaultDocPage/>: docs.map(({link,name,description,advantages,disadvantages,timeComplexity,spaceComplexity,applications})=>{
         return <div className="std-container" id="fcfs">
         <h1>{name}</h1>
-        <p className='first-para'>{description}</p>
+        <p className='first-para' id='f-para'>{description}</p>
             <div className='doc-content-detail'>
             <h4>
             Advantages
@@ -135,8 +145,17 @@ const DocsPage = () => {
 
         })
         }
+        </div>
+      </div>
+        
+
+
+
+     
       
     </div>
+    </div>
+  
     
   )
 }

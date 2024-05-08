@@ -12,10 +12,7 @@ export const OSAlgorithms = () => {
       "name": "SRJF",
       "description": "Shortest Remaining Job First: A preemptive version of SJF, where  process ..."
     },
-    {
-      "name": "RR",
-      "description": "Round Robin: Allocates a fixed time slice (quantum) to each process in a cyclic manner..."
-    },
+   
     {
       "name": "Priority",
       "description": "Priority Scheduling: Assigns priority levels to processes, scheduling higher-priority... "
@@ -23,7 +20,7 @@ export const OSAlgorithms = () => {
     {
         "name": "MLQ",
         "description": "Multilevel Queue Scheduling: Divides processes into multiple priority levels ..."
-    }
+    },
   ]
 }
 

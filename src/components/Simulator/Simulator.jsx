@@ -16,6 +16,7 @@ import { Toaster, toast as toastifyToast } from "react-hot-toast"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ImportJsonDialogueBox from "./ImportJsonDialogueBox"
+import '../../styles/Simulator.css'
 
 
 const Simulator = () => {
@@ -558,7 +559,8 @@ const Simulator = () => {
 
   
   return (
-    <div className="text-white text-center">
+    <div className="simulator-section">
+         <div className="text-white text-center">
       <h1 className="text-4xl">CPU Scheduling Simulator</h1>
 
       {/* AlgoSelect Section */}
@@ -998,6 +1000,7 @@ const Simulator = () => {
         pauseOnHover
         theme="colored"
       />
+    </div>
     </div>
   )
 }

@@ -11,24 +11,31 @@ import Footer from '../components/Footer'
 const About = () => {
   return (
     <div className='about-us-page'>
-      <div className='title-section'>
+      
         <Nav />
-        <h1 className='title'></h1>
-      </div>
+       <div className="title">Our Team</div>
 
-     <div className="parent-div">
-     <div className='our-team-container'>
-        <h1 style={{ color: '#444' }}>Our Team</h1>
-        <div className='team'>
-          <TeamCard name="Ashish Singh" id='1' image = {ashishImg} social={socialImg} />
-          <TeamCard name="Kavya Gupta" id='2' image={kavyaImg}  social={socialImg} />
+       
+
+    
+    
+       <div className="main-container">
+       <div className=" card-box-both   ">
+          <TeamCard className="child1" name="Ashish Singh" id='1' image = {ashishImg} social={socialImg} />
+          <TeamCard className="child1" name="Kavya Gupta" id='2' image={kavyaImg}  social={socialImg} />
+         
+         
+         
         </div>
-      </div>
-      <div className="out-instructor-container">
+    
+       </div>
+         
+
+      {/* <div className="out-instructor-container">
         <InstructorCard/>
-      </div>
-      <Footer/>
-     </div>
+      </div> */}
+     
+    
     </div>
   )
 }

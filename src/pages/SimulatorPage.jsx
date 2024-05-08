@@ -1,13 +1,15 @@
 import { Nav, Simulator } from '../components'
+import Footer from '../components/Footer'
 
 const SimulatorPage = () => {
   return (
-    <div className='home_page'>
-      <div>
+    <>
+   
         <Nav />
-      </div>
+      
       <Simulator />
-    </div>
+      <Footer/>
+    </>
   )
 }
 

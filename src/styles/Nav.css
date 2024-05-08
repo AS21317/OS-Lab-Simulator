@@ -1,6 +1,7 @@
 .section-navbar{
     width: 100%;
-    background-color: #cce7fa;
+    background-color: transparent;
+    overflow: hidden;
    
 }
 
@@ -9,7 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.8rem;
+    padding: .5rem 1.4rem;
+ 
+  
+    margin-bottom: .2rem;
   
   }
 
@@ -17,11 +21,11 @@
 
 
 ul{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
-.links li {
-    font-size: 1.3rem;
+.links a {
+    font-size: 1.5rem  !important;
     font-weight: 600;
  
 }
@@ -32,4 +36,31 @@ ul{
     color: rgb(144, 118, 7);
 }
 
+.navbar .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* Media Query  */
+
+ @media(width <= 1400px){
+    html{
+        font-size: 86.25%;
+        /* 1rem = 9px */
+      }
+
+}
+
+@media(width<= 770px)
+{
+ .section-navbar .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.4rem;
+    margin: .8rem auto;
+ }
+
+ 
+}
+

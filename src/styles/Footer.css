@@ -6,11 +6,10 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  padding: 2rem;
+  /* position: absolute; */
+ 
+ width: 100%;
+  padding: 1rem;
   background: purple;
   color: white;
   font-weight: 500;

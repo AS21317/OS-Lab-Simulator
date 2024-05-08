@@ -101,7 +101,11 @@ Variables
 
 .text-container p{
     color: white;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+.text-container h3{
+  font-size: 1.7rem;
 }
 
 
@@ -109,7 +113,7 @@ Variables
     margin: 0 auto;
     /* margin-top: 4rem; */
     
-    height: 350px;
+    height: 450px;
 
     max-width: 800px;
     text-align: center;

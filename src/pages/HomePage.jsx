@@ -9,11 +9,12 @@ const Home = () => {
         <Nav  />
       
       
-        <Home_intro  />
+          <Home_intro  />
 
       <Home_content/>
-      <Home_blogs/>
-      <Home_fly/>
+     <Home_blogs/>
+     <Home_fly/>
+      <Footer/> 
       
    </>
   )
