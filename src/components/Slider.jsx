@@ -3,7 +3,7 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import '../styles/Slider.css'
 
-import image1 from '../assets/slideImage/GanntChart01.png';
+import image1 from '../assets/slideImage/ganntChart01.png';
 import image2 from '../assets/slideImage/save02.jpg';
 import image3 from '../assets/slideImage/pieChart.png';
 import image4 from '../assets/slideImage/Processes.png';
