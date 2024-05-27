@@ -2,7 +2,8 @@ import { useNavigate } from 'react-router-dom'
 import '../styles/Home_intro.css'
 import  heroImage from'../assets/introImage1.png'
 import { FaArrowDown } from "react-icons/fa6";
-import Slider from './slider'
+import Slider from './Slider'
+
 
 
 
