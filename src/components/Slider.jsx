@@ -1,7 +1,7 @@
  import React, { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
-import '../styles/slider.css'
+import '../styles/Slider.css'
 
 import image1 from '../assets/slideImage/GanntChart01.png';
 import image2 from '../assets/slideImage/save02.jpg';
